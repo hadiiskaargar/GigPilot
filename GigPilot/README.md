@@ -55,6 +55,7 @@ streamlit run dashboard.py
 
 ## 📸 Screenshot
 
+![GigPilot Dashboard](gigpilot-dashboard-screenshot.png)
 
 
 ---
