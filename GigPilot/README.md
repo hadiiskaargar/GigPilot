@@ -1,49 +1,61 @@
-# GigPilot - Freelancer Job Scraper
+# 🧠 GigPilot: Freelance Job Scraper for Freelancer.com
 
-GigPilot is a Python project that scrapes freelance job listings from [freelancer.com](https://www.freelancer.com) based on a list of keywords and provides a Streamlit dashboard for searching, filtering, and analyzing jobs.
+&#x20;&#x20;
 
-<p align="center">
-  <img src="GigPilot/data/screenshot.png" alt="GigPilot Dashboard" width="80%">
-</p>
+GigPilot is a simple yet powerful freelance job scraper and dashboard designed specifically for [Freelancer.com](https://www.freelancer.com/). It fetches freelance job listings based on keywords and visualizes them in a dashboard for quick filtering and analysis.
 
 ---
 
 ## 🚀 Features
 
-- 🔍 Scrape jobs from Freelancer.com with selected keywords
-- 🧠 Parse and structure data (title, country, budget, skills, snippet, etc.)
-- 📊 Interactive Streamlit dashboard for filtering and visualization
-- 💾 Saves scraped jobs in an SQLite database
-
----
-
-## 📦 Requirements
-
-Install required packages with:
-
-```bash
-pip install -r requirements.txt
-```
+- 🔍 Keyword-based job scraping from Freelancer.com
+- 📊 Interactive dashboard with Streamlit
+- 🧠 Skill/tag extraction from job data
+- 📁 SQLite database storage
 
 ---
 
 ## ⚙️ How to Use
 
-1. **Activate virtual environment (optional but recommended)**  
-   ```bash
-   source venv/bin/activate
-   ```
+### 1. Activate virtual environment
 
-2. **Run the scraper**  
-   You will be prompted to enter keywords:
-   ```bash
-   python scraper.py
-   ```
+```bash
+source venv/bin/activate
+```
 
-3. **Launch the dashboard**  
-   ```bash
-   streamlit run dashboard.py
-   ```
+### 2. Run the scraper
+
+```bash
+python scraper.py
+```
+
+- Enter keywords when prompted (e.g., `web scraping, automation, data entry`)
+- Jobs will be saved in `jobs.db`
+
+### 3. Launch the dashboard
+
+```bash
+streamlit run dashboard.py
+```
+
+- View and explore scraped jobs in your browser
+
+---
+
+## 🧰 Tech Stack
+
+- **Python 3.9+**
+- **Requests** — for sending HTTP requests
+- **BeautifulSoup** — for parsing HTML
+- **SQLite3** — for local database storage
+- **Pandas** — for data manipulation
+- **Streamlit** — for creating the interactive dashboard
+
+---
+
+## 📸 Screenshot
+
+
 
 ---
 
@@ -51,23 +63,25 @@ pip install -r requirements.txt
 
 ```
 GigPilot/
-│
-├── scraper.py              # Scrapes job data and saves to SQLite
-├── dashboard.py            # Streamlit dashboard for data analysis
-├── database.py             # DB setup and helper functions
-├── data/                   # Contains screenshot and data samples
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+├── data/                     # Optional CSV output
+├── dashboard.py             # Streamlit dashboard
+├── database.py              # Database handler
+├── scraper.py               # Main scraper
+├── requirements.txt         # Python dependencies
+└── README.md
 ```
 
 ---
 
+## 📄 License
 
-## 📬 Contact
-
-For questions or collaboration, reach out via [GitHub](https://github.com/hadiiskaargar)
+This project is licensed under the **MIT License**.
 
 ---
-## 📸 Screenshot
 
-![GigPilot Dashboard](gigpilot-dashboard-screenshot.png)
+## 🤛‍♂️ Author
+
+**Hadis Kargar** — [GitHub](https://github.com/hadiiskaargar)
+
+Feel free to ⭐️ the repo if you find it useful! PRs and issues welcome!
+
