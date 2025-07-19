@@ -73,3 +73,6 @@ GigPilot/
 For questions or collaboration, reach out via [GitHub](https://github.com/hadiiskaargar)
 
 ---
+## 📸 Screenshot
+
+![GigPilot Dashboard](gigpilot-dashboard-screenshot.png)
