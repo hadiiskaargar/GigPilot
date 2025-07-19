@@ -62,11 +62,6 @@ GigPilot/
 
 ---
 
-## 📸 Screenshot
-
-![Dashboard Screenshot](GigPilot/data/screenshot.png)
-
----
 
 ## 📬 Contact
 
